@@ -1,0 +1,6 @@
+framework module Pods_GoTennaTests {
+  umbrella header "Pods-GoTennaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

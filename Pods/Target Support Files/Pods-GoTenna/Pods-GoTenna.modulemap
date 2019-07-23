@@ -1,0 +1,6 @@
+framework module Pods_GoTenna {
+  umbrella header "Pods-GoTenna-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CC1734E1F03FE7DCE6AAB85 /* Pods_GoTennaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AAD66381D8E3CF3F7119AD /* Pods_GoTennaTests.framework */; };
+		28BD7454205CA8B9AD365A52 /* Pods_GoTennaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F7A90A000F283764BABFB3 /* Pods_GoTennaUITests.framework */; };
+		7081570222E6EDD9006065FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081570122E6EDD9006065FC /* AppDelegate.swift */; };
+		7081570422E6EDD9006065FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081570322E6EDD9006065FC /* ViewController.swift */; };
+		7081570722E6EDD9006065FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7081570522E6EDD9006065FC /* Main.storyboard */; };
+		7081570922E6EDDA006065FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7081570822E6EDDA006065FC /* Assets.xcassets */; };
+		7081570C22E6EDDA006065FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7081570A22E6EDDA006065FC /* LaunchScreen.storyboard */; };
+		7081571722E6EDDA006065FC /* GoTennaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081571622E6EDDA006065FC /* GoTennaTests.swift */; };
+		7081572222E6EDDA006065FC /* GoTennaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081572122E6EDDA006065FC /* GoTennaUITests.swift */; };
+		74A3BB9E930A242A6EBEB71D /* Pods_GoTenna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D838B0A7F9D1D206AA2D1EC /* Pods_GoTenna.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7081571322E6EDDA006065FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 708156F622E6EDD9006065FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 708156FD22E6EDD9006065FC;
+			remoteInfo = GoTenna;
+		};
+		7081571E22E6EDDA006065FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 708156F622E6EDD9006065FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 708156FD22E6EDD9006065FC;
+			remoteInfo = GoTenna;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36AAD66381D8E3CF3F7119AD /* Pods_GoTennaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoTennaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		562BDE3A572919C4B592A596 /* Pods-GoTennaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoTennaTests.debug.xcconfig"; path = "Target Support Files/Pods-GoTennaTests/Pods-GoTennaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D838B0A7F9D1D206AA2D1EC /* Pods_GoTenna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoTenna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		708156FE22E6EDD9006065FC /* GoTenna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoTenna.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7081570122E6EDD9006065FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7081570322E6EDD9006065FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7081570622E6EDD9006065FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7081570822E6EDDA006065FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7081570B22E6EDDA006065FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7081570D22E6EDDA006065FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7081571222E6EDDA006065FC /* GoTennaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoTennaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7081571622E6EDDA006065FC /* GoTennaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTennaTests.swift; sourceTree = "<group>"; };
+		7081571822E6EDDA006065FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7081571D22E6EDDA006065FC /* GoTennaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoTennaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7081572122E6EDDA006065FC /* GoTennaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTennaUITests.swift; sourceTree = "<group>"; };
+		7081572322E6EDDA006065FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		947034858FC154E5B9486A8E /* Pods-GoTenna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoTenna.debug.xcconfig"; path = "Target Support Files/Pods-GoTenna/Pods-GoTenna.debug.xcconfig"; sourceTree = "<group>"; };
+		955ED226B8EFEDD499BB25DB /* Pods-GoTennaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoTennaUITests.release.xcconfig"; path = "Target Support Files/Pods-GoTennaUITests/Pods-GoTennaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BC04F60DC065D65EBD5D1493 /* Pods-GoTennaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoTennaUITests.debug.xcconfig"; path = "Target Support Files/Pods-GoTennaUITests/Pods-GoTennaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5A25BD7E69748C3D6C91ABC /* Pods-GoTenna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoTenna.release.xcconfig"; path = "Target Support Files/Pods-GoTenna/Pods-GoTenna.release.xcconfig"; sourceTree = "<group>"; };
+		D00ECA0927D33575C110B0FF /* Pods-GoTennaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoTennaTests.release.xcconfig"; path = "Target Support Files/Pods-GoTennaTests/Pods-GoTennaTests.release.xcconfig"; sourceTree = "<group>"; };
+		E3F7A90A000F283764BABFB3 /* Pods_GoTennaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoTennaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		708156FB22E6EDD9006065FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74A3BB9E930A242A6EBEB71D /* Pods_GoTenna.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7081570F22E6EDDA006065FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC1734E1F03FE7DCE6AAB85 /* Pods_GoTennaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7081571A22E6EDDA006065FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28BD7454205CA8B9AD365A52 /* Pods_GoTennaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C85CCACC3949CE8905F5F60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				947034858FC154E5B9486A8E /* Pods-GoTenna.debug.xcconfig */,
+				C5A25BD7E69748C3D6C91ABC /* Pods-GoTenna.release.xcconfig */,
+				562BDE3A572919C4B592A596 /* Pods-GoTennaTests.debug.xcconfig */,
+				D00ECA0927D33575C110B0FF /* Pods-GoTennaTests.release.xcconfig */,
+				BC04F60DC065D65EBD5D1493 /* Pods-GoTennaUITests.debug.xcconfig */,
+				955ED226B8EFEDD499BB25DB /* Pods-GoTennaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		50E39D4B6FDFA1D914190E0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D838B0A7F9D1D206AA2D1EC /* Pods_GoTenna.framework */,
+				36AAD66381D8E3CF3F7119AD /* Pods_GoTennaTests.framework */,
+				E3F7A90A000F283764BABFB3 /* Pods_GoTennaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		708156F522E6EDD9006065FC = {
+			isa = PBXGroup;
+			children = (
+				7081570022E6EDD9006065FC /* GoTenna */,
+				7081571522E6EDDA006065FC /* GoTennaTests */,
+				7081572022E6EDDA006065FC /* GoTennaUITests */,
+				708156FF22E6EDD9006065FC /* Products */,
+				1C85CCACC3949CE8905F5F60 /* Pods */,
+				50E39D4B6FDFA1D914190E0F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		708156FF22E6EDD9006065FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				708156FE22E6EDD9006065FC /* GoTenna.app */,
+				7081571222E6EDDA006065FC /* GoTennaTests.xctest */,
+				7081571D22E6EDDA006065FC /* GoTennaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7081570022E6EDD9006065FC /* GoTenna */ = {
+			isa = PBXGroup;
+			children = (
+				7081570122E6EDD9006065FC /* AppDelegate.swift */,
+				7081570322E6EDD9006065FC /* ViewController.swift */,
+				7081570522E6EDD9006065FC /* Main.storyboard */,
+				7081570822E6EDDA006065FC /* Assets.xcassets */,
+				7081570A22E6EDDA006065FC /* LaunchScreen.storyboard */,
+				7081570D22E6EDDA006065FC /* Info.plist */,
+			);
+			path = GoTenna;
+			sourceTree = "<group>";
+		};
+		7081571522E6EDDA006065FC /* GoTennaTests */ = {
+			isa = PBXGroup;
+			children = (
+				7081571622E6EDDA006065FC /* GoTennaTests.swift */,
+				7081571822E6EDDA006065FC /* Info.plist */,
+			);
+			path = GoTennaTests;
+			sourceTree = "<group>";
+		};
+		7081572022E6EDDA006065FC /* GoTennaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7081572122E6EDDA006065FC /* GoTennaUITests.swift */,
+				7081572322E6EDDA006065FC /* Info.plist */,
+			);
+			path = GoTennaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		708156FD22E6EDD9006065FC /* GoTenna */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7081572622E6EDDA006065FC /* Build configuration list for PBXNativeTarget "GoTenna" */;
+			buildPhases = (
+				83C108F62D099907B87BF66C /* [CP] Check Pods Manifest.lock */,
+				708156FA22E6EDD9006065FC /* Sources */,
+				708156FB22E6EDD9006065FC /* Frameworks */,
+				708156FC22E6EDD9006065FC /* Resources */,
+				00F41EC82187A23F02B7BC0D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoTenna;
+			productName = GoTenna;
+			productReference = 708156FE22E6EDD9006065FC /* GoTenna.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7081571122E6EDDA006065FC /* GoTennaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7081572922E6EDDA006065FC /* Build configuration list for PBXNativeTarget "GoTennaTests" */;
+			buildPhases = (
+				2DC8930C3709FD9372D4BB48 /* [CP] Check Pods Manifest.lock */,
+				7081570E22E6EDDA006065FC /* Sources */,
+				7081570F22E6EDDA006065FC /* Frameworks */,
+				7081571022E6EDDA006065FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7081571422E6EDDA006065FC /* PBXTargetDependency */,
+			);
+			name = GoTennaTests;
+			productName = GoTennaTests;
+			productReference = 7081571222E6EDDA006065FC /* GoTennaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7081571C22E6EDDA006065FC /* GoTennaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7081572C22E6EDDA006065FC /* Build configuration list for PBXNativeTarget "GoTennaUITests" */;
+			buildPhases = (
+				23218B47BD175EE6BD9B2F63 /* [CP] Check Pods Manifest.lock */,
+				7081571922E6EDDA006065FC /* Sources */,
+				7081571A22E6EDDA006065FC /* Frameworks */,
+				7081571B22E6EDDA006065FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7081571F22E6EDDA006065FC /* PBXTargetDependency */,
+			);
+			name = GoTennaUITests;
+			productName = GoTennaUITests;
+			productReference = 7081571D22E6EDDA006065FC /* GoTennaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		708156F622E6EDD9006065FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Haasith Sanka";
+				TargetAttributes = {
+					708156FD22E6EDD9006065FC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					7081571122E6EDDA006065FC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 708156FD22E6EDD9006065FC;
+					};
+					7081571C22E6EDDA006065FC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 708156FD22E6EDD9006065FC;
+					};
+				};
+			};
+			buildConfigurationList = 708156F922E6EDD9006065FC /* Build configuration list for PBXProject "GoTenna" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 708156F522E6EDD9006065FC;
+			productRefGroup = 708156FF22E6EDD9006065FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				708156FD22E6EDD9006065FC /* GoTenna */,
+				7081571122E6EDDA006065FC /* GoTennaTests */,
+				7081571C22E6EDDA006065FC /* GoTennaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		708156FC22E6EDD9006065FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7081570C22E6EDDA006065FC /* LaunchScreen.storyboard in Resources */,
+				7081570922E6EDDA006065FC /* Assets.xcassets in Resources */,
+				7081570722E6EDD9006065FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7081571022E6EDDA006065FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7081571B22E6EDDA006065FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00F41EC82187A23F02B7BC0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoTenna/Pods-GoTenna-frameworks.sh",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoTenna/Pods-GoTenna-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23218B47BD175EE6BD9B2F63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoTennaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DC8930C3709FD9372D4BB48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoTennaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83C108F62D099907B87BF66C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoTenna-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		708156FA22E6EDD9006065FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7081570422E6EDD9006065FC /* ViewController.swift in Sources */,
+				7081570222E6EDD9006065FC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7081570E22E6EDDA006065FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7081571722E6EDDA006065FC /* GoTennaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7081571922E6EDDA006065FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7081572222E6EDDA006065FC /* GoTennaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7081571422E6EDDA006065FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 708156FD22E6EDD9006065FC /* GoTenna */;
+			targetProxy = 7081571322E6EDDA006065FC /* PBXContainerItemProxy */;
+		};
+		7081571F22E6EDDA006065FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 708156FD22E6EDD9006065FC /* GoTenna */;
+			targetProxy = 7081571E22E6EDDA006065FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7081570522E6EDD9006065FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7081570622E6EDD9006065FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7081570A22E6EDDA006065FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7081570B22E6EDDA006065FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7081572422E6EDDA006065FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7081572522E6EDDA006065FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7081572722E6EDDA006065FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 947034858FC154E5B9486A8E /* Pods-GoTenna.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNMSVT9QR6;
+				INFOPLIST_FILE = GoTenna/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haasith.GoTenna;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7081572822E6EDDA006065FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5A25BD7E69748C3D6C91ABC /* Pods-GoTenna.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNMSVT9QR6;
+				INFOPLIST_FILE = GoTenna/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haasith.GoTenna;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7081572A22E6EDDA006065FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 562BDE3A572919C4B592A596 /* Pods-GoTennaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNMSVT9QR6;
+				INFOPLIST_FILE = GoTennaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haasith.GoTennaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoTenna.app/GoTenna";
+			};
+			name = Debug;
+		};
+		7081572B22E6EDDA006065FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00ECA0927D33575C110B0FF /* Pods-GoTennaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNMSVT9QR6;
+				INFOPLIST_FILE = GoTennaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haasith.GoTennaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoTenna.app/GoTenna";
+			};
+			name = Release;
+		};
+		7081572D22E6EDDA006065FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC04F60DC065D65EBD5D1493 /* Pods-GoTennaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNMSVT9QR6;
+				INFOPLIST_FILE = GoTennaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haasith.GoTennaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoTenna;
+			};
+			name = Debug;
+		};
+		7081572E22E6EDDA006065FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 955ED226B8EFEDD499BB25DB /* Pods-GoTennaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNMSVT9QR6;
+				INFOPLIST_FILE = GoTennaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haasith.GoTennaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoTenna;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		708156F922E6EDD9006065FC /* Build configuration list for PBXProject "GoTenna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7081572422E6EDDA006065FC /* Debug */,
+				7081572522E6EDDA006065FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7081572622E6EDDA006065FC /* Build configuration list for PBXNativeTarget "GoTenna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7081572722E6EDDA006065FC /* Debug */,
+				7081572822E6EDDA006065FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7081572922E6EDDA006065FC /* Build configuration list for PBXNativeTarget "GoTennaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7081572A22E6EDDA006065FC /* Debug */,
+				7081572B22E6EDDA006065FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7081572C22E6EDDA006065FC /* Build configuration list for PBXNativeTarget "GoTennaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7081572D22E6EDDA006065FC /* Debug */,
+				7081572E22E6EDDA006065FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 708156F622E6EDD9006065FC /* Project object */;
+}
