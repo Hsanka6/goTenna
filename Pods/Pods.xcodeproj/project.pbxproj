@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		15CB3399163E19AD76789C6008CC9B62 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C873446684BFCD77A117E48A749B38FF /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
 		33FD49C316A380C97D6435712607313B /* Mapbox-iOS-SDK */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 83F7A7525EE724C50FF6E579E6AB7E7F /* Build configuration list for PBXAggregateTarget "Mapbox-iOS-SDK" */;
@@ -19,13 +28,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		09FEFD524CA62D2A80FF6785F37856B6 /* Pods-GoTenna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2631C9261B38CE980CC27CD2A87E56 /* Pods-GoTenna-dummy.m */; };
-		1B7D29056F59647094B6695174055866 /* Pods-GoTenna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AC6E147018B5A5D5F5B6F92CFDDD578 /* Pods-GoTenna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D3D5A908E1EFADD1B9E15B54B8A289B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		3E16E0D0F513C5C5E9D7CBD58540C3C7 /* Pods-GoTennaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C089E8225D9A80DEC5E30C7755FC9BC /* Pods-GoTennaTests-dummy.m */; };
 		622C8EFF9EC7C0A6D499C52326B249EF /* Pods-GoTennaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28809BFB0444AEC9D2AC867E51057F74 /* Pods-GoTennaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		654E147B15324F4B7DDC033D5327E943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		77AAEBDA159084063F077FF49F1C87E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		66D2C2BAA34D1157736084F6967C7C6D /* Pods-GoTenna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2631C9261B38CE980CC27CD2A87E56 /* Pods-GoTenna-dummy.m */; };
 		9B15742A9B41760A76841A968276EA66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		9EC427E263E50C30CDF5F22A94F11476 /* Pods-GoTenna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AC6E147018B5A5D5F5B6F92CFDDD578 /* Pods-GoTenna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E34FAEAC81F830D8D9407FBF53467B30 /* Pods-GoTennaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C8A1D7E8CE507A29F173DC8DDD309E0 /* Pods-GoTennaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F77A2702196B72F385A71CEA1E1852E4 /* Pods-GoTennaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C97C9A1B0CFBB6191D0E46BD2BFA22 /* Pods-GoTennaUITests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -35,29 +44,36 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4A6584A8DFC5C4500A822D5A86D4BF6F;
+			remoteGlobalIDString = B94F64A837B271DA457D69C95CCCB7E2;
 			remoteInfo = "Pods-GoTenna";
 		};
-		5F0E38977CD601AD8D7D6546C239E628 /* PBXContainerItemProxy */ = {
+		9D3DDEB0B91B58F4901618C499226930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B94F64A837B271DA457D69C95CCCB7E2;
+			remoteInfo = "Pods-GoTenna";
+		};
+		ADCD81451C1F35B242DE2102BEB6B0C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 33FD49C316A380C97D6435712607313B;
 			remoteInfo = "Mapbox-iOS-SDK";
 		};
-		9D3DDEB0B91B58F4901618C499226930 /* PBXContainerItemProxy */ = {
+		D2CF4C4115B1C690527B93A75EEA50BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4A6584A8DFC5C4500A822D5A86D4BF6F;
-			remoteInfo = "Pods-GoTenna";
+			remoteGlobalIDString = 15CB3399163E19AD76789C6008CC9B62;
+			remoteInfo = SwiftLint;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		05503928B79A95F8F43366C70157D5A2 /* Pods-GoTennaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoTennaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0B5D017EDA1D749C04F18FADCB7112D0 /* Mapbox-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Mapbox-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
 		0EDAB315FBA7ABE6B087F3F8479C9BA2 /* Pods-GoTennaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoTennaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1485DA56F53A2890A142C324B5FF4960 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
 		1F242B409A3A615C2C9BBBC54DE137E0 /* Pods_GoTennaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GoTennaTests.framework; path = "Pods-GoTennaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28809BFB0444AEC9D2AC867E51057F74 /* Pods-GoTennaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoTennaTests-umbrella.h"; sourceTree = "<group>"; };
 		29D2797494843DA15D17E4AD7858F0DD /* Pods-GoTennaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GoTennaTests.modulemap"; sourceTree = "<group>"; };
@@ -67,6 +83,7 @@
 		529E41EC6F04B2472A96A496D91DB0B2 /* Pods-GoTennaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoTennaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5C8A1D7E8CE507A29F173DC8DDD309E0 /* Pods-GoTennaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoTennaUITests-umbrella.h"; sourceTree = "<group>"; };
 		5F4BB9DE450DCE03E9775F01A2A9CCF8 /* Pods-GoTenna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoTenna.debug.xcconfig"; sourceTree = "<group>"; };
+		66456FE8F0E2B0A1199D915EDE023E81 /* SwiftLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.xcconfig; sourceTree = "<group>"; };
 		716B5F8FFBFE048C97265F8B78D37AEF /* Pods-GoTennaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoTennaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		79CECFF3826813194A05F0286D1EB402 /* Pods-GoTenna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoTenna.release.xcconfig"; sourceTree = "<group>"; };
 		88C35EEC925CD1713E33413EC2C7CA50 /* Pods-GoTennaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoTennaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,8 +101,8 @@
 		C8719F8CB7A72F76C50A1224034BB461 /* Pods-GoTenna-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoTenna-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CE2631C9261B38CE980CC27CD2A87E56 /* Pods-GoTenna-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoTenna-dummy.m"; sourceTree = "<group>"; };
+		D7FD0A84D3E9EDAD11EBD3B010CDA85B /* Mapbox-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Mapbox-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
 		DBFE9F614178CCDEEB1B6AD8622DE0C1 /* Pods_GoTenna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GoTenna.framework; path = "Pods-GoTenna.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E087F715741E547CB6AF397D5E8A6F80 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
 		FBC5A46C737763A3A6B17AEBC3CAE9E4 /* Pods-GoTenna-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoTenna-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,23 +123,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95340032B77AB747FD748C0A25C40778 /* Frameworks */ = {
+		302FD9B789377E38B2F2069C431F1767 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77AAEBDA159084063F077FF49F1C87E1 /* Foundation.framework in Frameworks */,
+				2D3D5A908E1EFADD1B9E15B54B8A289B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23C57576DAA07F342360E69E737CF580 /* Pods */ = {
+		08A973B92C9D957957EABC6E3DC6701D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D5BC5187EA00C8C574D4059EB3D724EC /* Mapbox-iOS-SDK */,
+				66456FE8F0E2B0A1199D915EDE023E81 /* SwiftLint.xcconfig */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		0ABA92BBB25AF67EF77782025D3076EE /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				08A973B92C9D957957EABC6E3DC6701D /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
 		39C87A446279ACB4E71286CEE7BB2497 /* Products */ = {
@@ -152,6 +179,16 @@
 			path = "Target Support Files/Pods-GoTenna";
 			sourceTree = "<group>";
 		};
+		8E19A0EAAF810F3494F8C86541486865 /* Mapbox-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				E7B10E52D47CF37B193D9ACC22CDAAAD /* Frameworks */,
+				F4D842503E666DECCBEE219BBEBBFB0D /* Support Files */,
+			);
+			name = "Mapbox-iOS-SDK";
+			path = "Mapbox-iOS-SDK";
+			sourceTree = "<group>";
+		};
 		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,20 +213,12 @@
 			path = "Target Support Files/Pods-GoTennaUITests";
 			sourceTree = "<group>";
 		};
-		B4A30EB3199C232ADCC57262FB13D57F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E087F715741E547CB6AF397D5E8A6F80 /* Mapbox.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				23C57576DAA07F342360E69E737CF580 /* Pods */,
+				F3DC89C0580E0969139A8048AB9D8CE8 /* Pods */,
 				39C87A446279ACB4E71286CEE7BB2497 /* Products */,
 				D188E9DFC68A7B8B3399610131DAE9ED /* Targets Support Files */,
 			);
@@ -213,16 +242,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D5BC5187EA00C8C574D4059EB3D724EC /* Mapbox-iOS-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				B4A30EB3199C232ADCC57262FB13D57F /* Frameworks */,
-				EEB7D592967A3B5B98358FEE7F3FA97B /* Support Files */,
-			);
-			name = "Mapbox-iOS-SDK";
-			path = "Mapbox-iOS-SDK";
-			sourceTree = "<group>";
-		};
 		E0882E9D042BA8D82E8599372F3941E1 /* Pods-GoTennaTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,10 +258,27 @@
 			path = "Target Support Files/Pods-GoTennaTests";
 			sourceTree = "<group>";
 		};
-		EEB7D592967A3B5B98358FEE7F3FA97B /* Support Files */ = {
+		E7B10E52D47CF37B193D9ACC22CDAAAD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0B5D017EDA1D749C04F18FADCB7112D0 /* Mapbox-iOS-SDK.xcconfig */,
+				1485DA56F53A2890A142C324B5FF4960 /* Mapbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3DC89C0580E0969139A8048AB9D8CE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E19A0EAAF810F3494F8C86541486865 /* Mapbox-iOS-SDK */,
+				0ABA92BBB25AF67EF77782025D3076EE /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4D842503E666DECCBEE219BBEBBFB0D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7FD0A84D3E9EDAD11EBD3B010CDA85B /* Mapbox-iOS-SDK.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Mapbox-iOS-SDK";
@@ -267,11 +303,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8D7C4D035C5045095078186416BC1FF /* Headers */ = {
+		ECC284D3BCF4F02688BC8E55A4095DC0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B7D29056F59647094B6695174055866 /* Pods-GoTenna-umbrella.h in Headers */,
+				9EC427E263E50C30CDF5F22A94F11476 /* Pods-GoTenna-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,25 +333,6 @@
 			productReference = 1F242B409A3A615C2C9BBBC54DE137E0 /* Pods_GoTennaTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4A6584A8DFC5C4500A822D5A86D4BF6F /* Pods-GoTenna */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 445A0270441AFCC3A8A1A9A6177FF201 /* Build configuration list for PBXNativeTarget "Pods-GoTenna" */;
-			buildPhases = (
-				A8D7C4D035C5045095078186416BC1FF /* Headers */,
-				BA65C7DC1C3293916BD56F3AA9E51AA1 /* Sources */,
-				95340032B77AB747FD748C0A25C40778 /* Frameworks */,
-				9A7D654A5D3A6E8242282450DFE4D78B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D4C42261E0A9E8E0F62DA11D32844C92 /* PBXTargetDependency */,
-			);
-			name = "Pods-GoTenna";
-			productName = "Pods-GoTenna";
-			productReference = DBFE9F614178CCDEEB1B6AD8622DE0C1 /* Pods_GoTenna.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		62094B9C5D76A46E4A0EF8854F649294 /* Pods-GoTennaUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B5BDE2C41C2317741555E7BF46F6BF6 /* Build configuration list for PBXNativeTarget "Pods-GoTennaUITests" */;
@@ -333,6 +350,26 @@
 			name = "Pods-GoTennaUITests";
 			productName = "Pods-GoTennaUITests";
 			productReference = BFCD76FBA6F97ED77D04B1FFD101F192 /* Pods_GoTennaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B94F64A837B271DA457D69C95CCCB7E2 /* Pods-GoTenna */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 443E66A0ACF060C38175BB90921C2958 /* Build configuration list for PBXNativeTarget "Pods-GoTenna" */;
+			buildPhases = (
+				ECC284D3BCF4F02688BC8E55A4095DC0 /* Headers */,
+				27A3B9797FC553228CB8D43C7AD1FD46 /* Sources */,
+				302FD9B789377E38B2F2069C431F1767 /* Frameworks */,
+				6CF9C4E47E1271C9239E98864B57BF3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7B868C3AE52CA77CDF02C84D3BA65EE /* PBXTargetDependency */,
+				612FF337EE41BC9F1F83A358D82F40D7 /* PBXTargetDependency */,
+			);
+			name = "Pods-GoTenna";
+			productName = "Pods-GoTenna";
+			productReference = DBFE9F614178CCDEEB1B6AD8622DE0C1 /* Pods_GoTenna.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -357,9 +394,10 @@
 			projectRoot = "";
 			targets = (
 				33FD49C316A380C97D6435712607313B /* Mapbox-iOS-SDK */,
-				4A6584A8DFC5C4500A822D5A86D4BF6F /* Pods-GoTenna */,
+				B94F64A837B271DA457D69C95CCCB7E2 /* Pods-GoTenna */,
 				352122AC129A2DE498F7ADA183243DAB /* Pods-GoTennaTests */,
 				62094B9C5D76A46E4A0EF8854F649294 /* Pods-GoTennaUITests */,
+				15CB3399163E19AD76789C6008CC9B62 /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
@@ -372,7 +410,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A7D654A5D3A6E8242282450DFE4D78B /* Resources */ = {
+		6CF9C4E47E1271C9239E98864B57BF3E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -397,11 +435,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA65C7DC1C3293916BD56F3AA9E51AA1 /* Sources */ = {
+		27A3B9797FC553228CB8D43C7AD1FD46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09FEFD524CA62D2A80FF6785F37856B6 /* Pods-GoTenna-dummy.m in Sources */,
+				66D2C2BAA34D1157736084F6967C7C6D /* Pods-GoTenna-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,27 +457,33 @@
 		42D791684DDDC38DDA56C8888AF7B634 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-GoTenna";
-			target = 4A6584A8DFC5C4500A822D5A86D4BF6F /* Pods-GoTenna */;
+			target = B94F64A837B271DA457D69C95CCCB7E2 /* Pods-GoTenna */;
 			targetProxy = 9D3DDEB0B91B58F4901618C499226930 /* PBXContainerItemProxy */;
+		};
+		612FF337EE41BC9F1F83A358D82F40D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 15CB3399163E19AD76789C6008CC9B62 /* SwiftLint */;
+			targetProxy = D2CF4C4115B1C690527B93A75EEA50BB /* PBXContainerItemProxy */;
 		};
 		CBDF6788166E5BD77B4CA6599296B49D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-GoTenna";
-			target = 4A6584A8DFC5C4500A822D5A86D4BF6F /* Pods-GoTenna */;
+			target = B94F64A837B271DA457D69C95CCCB7E2 /* Pods-GoTenna */;
 			targetProxy = 33793A85CB21F8F3A08226611B2B76A5 /* PBXContainerItemProxy */;
 		};
-		D4C42261E0A9E8E0F62DA11D32844C92 /* PBXTargetDependency */ = {
+		F7B868C3AE52CA77CDF02C84D3BA65EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Mapbox-iOS-SDK";
 			target = 33FD49C316A380C97D6435712607313B /* Mapbox-iOS-SDK */;
-			targetProxy = 5F0E38977CD601AD8D7D6546C239E628 /* PBXContainerItemProxy */;
+			targetProxy = ADCD81451C1F35B242DE2102BEB6B0C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		46BFB9A54CE3465FD3218BDF323DC483 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B5D017EDA1D749C04F18FADCB7112D0 /* Mapbox-iOS-SDK.xcconfig */;
+			baseConfigurationReference = D7FD0A84D3E9EDAD11EBD3B010CDA85B /* Mapbox-iOS-SDK.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -453,83 +497,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		67E81CAFA080F1A6FA445B58934D7CA7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79CECFF3826813194A05F0286D1EB402 /* Pods-GoTenna.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GoTenna/Pods-GoTenna-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GoTenna/Pods-GoTenna.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8ECF611F2C511133B3686249B2B7A992 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F4BB9DE450DCE03E9775F01A2A9CCF8 /* Pods-GoTenna.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GoTenna/Pods-GoTenna-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GoTenna/Pods-GoTenna.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		9BDF58C96749E217FEE3DEC05798A038 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -629,6 +596,22 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		B677C33F9CAA2FD01C2F8C5DE8EFC6D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66456FE8F0E2B0A1199D915EDE023E81 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		C0B2D05CBA24EC2E20818A25BEFD78E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -734,7 +717,7 @@
 		};
 		C4439E605361E4523071694D265A0A63 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B5D017EDA1D749C04F18FADCB7112D0 /* Mapbox-iOS-SDK.xcconfig */;
+			baseConfigurationReference = D7FD0A84D3E9EDAD11EBD3B010CDA85B /* Mapbox-iOS-SDK.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -773,6 +756,100 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GoTennaTests/Pods-GoTennaTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D34C88B9199DACC38347460B000E8053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F4BB9DE450DCE03E9775F01A2A9CCF8 /* Pods-GoTenna.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoTenna/Pods-GoTenna-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoTenna/Pods-GoTenna.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E160EE0C3F9D527A6222430C2FD5E64F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66456FE8F0E2B0A1199D915EDE023E81 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6BE8B18ED4742580D375F402CEB6E5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79CECFF3826813194A05F0286D1EB402 /* Pods-GoTenna.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoTenna/Pods-GoTenna-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoTenna/Pods-GoTenna.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -837,11 +914,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		445A0270441AFCC3A8A1A9A6177FF201 /* Build configuration list for PBXNativeTarget "Pods-GoTenna" */ = {
+		443E66A0ACF060C38175BB90921C2958 /* Build configuration list for PBXNativeTarget "Pods-GoTenna" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8ECF611F2C511133B3686249B2B7A992 /* Debug */,
-				67E81CAFA080F1A6FA445B58934D7CA7 /* Release */,
+				D34C88B9199DACC38347460B000E8053 /* Debug */,
+				E6BE8B18ED4742580D375F402CEB6E5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -860,6 +937,15 @@
 			buildConfigurations = (
 				C4439E605361E4523071694D265A0A63 /* Debug */,
 				46BFB9A54CE3465FD3218BDF323DC483 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C873446684BFCD77A117E48A749B38FF /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B677C33F9CAA2FD01C2F8C5DE8EFC6D8 /* Debug */,
+				E160EE0C3F9D527A6222430C2FD5E64F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

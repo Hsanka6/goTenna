@@ -19,6 +19,18 @@
 		74A3BB9E930A242A6EBEB71D /* Pods_GoTenna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D838B0A7F9D1D206AA2D1EC /* Pods_GoTenna.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		707AEB0E22E6F46F001E8DAF /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXContainerItemProxy section */
 		7081571322E6EDDA006065FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -99,7 +111,6 @@
 				BC04F60DC065D65EBD5D1493 /* Pods-GoTennaUITests.debug.xcconfig */,
 				955ED226B8EFEDD499BB25DB /* Pods-GoTennaUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -178,8 +189,10 @@
 				708156FB22E6EDD9006065FC /* Frameworks */,
 				708156FC22E6EDD9006065FC /* Resources */,
 				00F41EC82187A23F02B7BC0D /* [CP] Embed Pods Frameworks */,
+				707AEB0F22E6F50D001E8DAF /* ShellScript */,
 			);
 			buildRules = (
+				707AEB0E22E6F46F001E8DAF /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -364,6 +377,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		707AEB0F22E6F50D001E8DAF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		83C108F62D099907B87BF66C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
