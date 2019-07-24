@@ -41,5 +41,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoiaGFhc2l0aDIiLCJhIjoiY2p5Z21zaHd3MDJxbTNnbXVmcXEzOXE4ZSJ9.xthVQm4hX2n_2H0aKGTBPw</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your location data to show you places nearby!</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We need your location data to show you places nearby!</string>
 </dict>
 </plist>

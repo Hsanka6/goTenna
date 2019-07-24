@@ -1,20 +1,30 @@
 PODS:
   - Mapbox-iOS-SDK (5.1.1)
+  - Realm (3.17.1):
+    - Realm/Headers (= 3.17.1)
+  - Realm/Headers (3.17.1)
+  - RealmSwift (3.17.1):
+    - Realm (= 3.17.1)
   - SwiftLint (0.34.0)
 
 DEPENDENCIES:
   - Mapbox-iOS-SDK (~> 5.1)
+  - RealmSwift
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Mapbox-iOS-SDK
+    - Realm
+    - RealmSwift
     - SwiftLint
 
 SPEC CHECKSUMS:
   Mapbox-iOS-SDK: 528739007963ba7f63996d8ea3b382597627f272
+  Realm: c204f1a890f07dea43b14132a6aad118c054b8f2
+  RealmSwift: 4d3c9233544b9cd08a8913e0872b9038eb99b054
   SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
 
-PODFILE CHECKSUM: 314f6693081fc4a551a0e1b4dd863e9e18cbc2b0
+PODFILE CHECKSUM: 75b55fec41ec865182b6655547df401b5df4046b
 
 COCOAPODS: 1.6.1

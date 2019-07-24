@@ -6,7 +6,7 @@ target 'GoTenna' do
   use_frameworks!
   pod 'Mapbox-iOS-SDK', '~> 5.1'
   pod 'SwiftLint'
-
+  pod 'RealmSwift'
   # Pods for GoTenna
 
   target 'GoTennaTests' do
