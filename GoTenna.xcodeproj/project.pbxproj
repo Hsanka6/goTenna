@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1CC1734E1F03FE7DCE6AAB85 /* Pods_GoTennaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AAD66381D8E3CF3F7119AD /* Pods_GoTennaTests.framework */; };
 		28BD7454205CA8B9AD365A52 /* Pods_GoTennaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F7A90A000F283764BABFB3 /* Pods_GoTennaUITests.framework */; };
+		7039880522E8D67100B0D0DD /* MapViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7039880422E8D67100B0D0DD /* MapViewViewModel.swift */; };
+		7039880722E8D9FE00B0D0DD /* LocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7039880622E8D9FE00B0D0DD /* LocationTableViewController.swift */; };
+		7039880922E8E19000B0D0DD /* PinClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7039880822E8E19000B0D0DD /* PinClient.swift */; };
+		7039880B22E8EC3300B0D0DD /* PinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7039880A22E8EC3300B0D0DD /* PinTableViewCell.swift */; };
 		7081570222E6EDD9006065FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081570122E6EDD9006065FC /* AppDelegate.swift */; };
 		7081570422E6EDD9006065FC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081570322E6EDD9006065FC /* MapViewController.swift */; };
 		7081570722E6EDD9006065FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7081570522E6EDD9006065FC /* Main.storyboard */; };
@@ -54,6 +58,10 @@
 		36AAD66381D8E3CF3F7119AD /* Pods_GoTennaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoTennaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		562BDE3A572919C4B592A596 /* Pods-GoTennaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoTennaTests.debug.xcconfig"; path = "Target Support Files/Pods-GoTennaTests/Pods-GoTennaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D838B0A7F9D1D206AA2D1EC /* Pods_GoTenna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoTenna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7039880422E8D67100B0D0DD /* MapViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewModel.swift; sourceTree = "<group>"; };
+		7039880622E8D9FE00B0D0DD /* LocationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewController.swift; sourceTree = "<group>"; };
+		7039880822E8E19000B0D0DD /* PinClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinClient.swift; sourceTree = "<group>"; };
+		7039880A22E8EC3300B0D0DD /* PinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinTableViewCell.swift; sourceTree = "<group>"; };
 		708156FE22E6EDD9006065FC /* GoTenna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoTenna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7081570122E6EDD9006065FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7081570322E6EDD9006065FC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +177,10 @@
 				7081570822E6EDDA006065FC /* Assets.xcassets */,
 				7081570A22E6EDDA006065FC /* LaunchScreen.storyboard */,
 				7081570D22E6EDDA006065FC /* Info.plist */,
+				7039880422E8D67100B0D0DD /* MapViewViewModel.swift */,
+				7039880622E8D9FE00B0D0DD /* LocationTableViewController.swift */,
+				7039880822E8E19000B0D0DD /* PinClient.swift */,
+				7039880A22E8EC3300B0D0DD /* PinTableViewCell.swift */,
 			);
 			path = GoTenna;
 			sourceTree = "<group>";
@@ -445,6 +457,10 @@
 			files = (
 				70B982AE22E8399E00ECF834 /* Pin.swift in Sources */,
 				7081570422E6EDD9006065FC /* MapViewController.swift in Sources */,
+				7039880522E8D67100B0D0DD /* MapViewViewModel.swift in Sources */,
+				7039880B22E8EC3300B0D0DD /* PinTableViewCell.swift in Sources */,
+				7039880722E8D9FE00B0D0DD /* LocationTableViewController.swift in Sources */,
+				7039880922E8E19000B0D0DD /* PinClient.swift in Sources */,
 				7081570222E6EDD9006065FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

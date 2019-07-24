@@ -24,6 +24,3 @@ struct Pin: Decodable {
     let description: String
 }
 
-struct Response: Decodable {
-    var pins: [Pin]
-}

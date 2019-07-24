@@ -10,8 +10,10 @@ import UIKit
 import Mapbox
 import CoreLocation
 import RealmSwift
+
 class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet var mapView: MGLMapView!
+    var pinData = [Pin]()
     var locationManager: CLLocationManager!
     func setUpUI() {
         //mapView.setCenter(CLLocationCoordinate2D(latitude: 59.31, longitude: 18.06), zoomLevel: 9, animated: false)
@@ -38,43 +40,37 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 //            var person = realm.create(Pin.self, value: ["Jane", 27])
 //            // Reading from or modifying a `RealmOptional` is done via the `value` property
 //        }
-        let res: Response = getFile(fileName: "goTenna")
-        for pin in res.pins {
-            print(pin.name)
-        }
+        //let res: Response = getFile(fileName: "goTenna")
+//        for pin in res.pins {
+//            print(pin.name)
+//        }
+        getFile()
     }
-    func getFile(fileName: String) -> Response {
-        var response: Response?
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .secondsSince1970
-        if let path = Bundle.main.path(forResource: fileName, ofType: "json") {
-            print("here")
-            do {
-                print("here1")
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                print("here2")
-                response = try decoder.decode(Response.self, from: data)
-                print(response?.pins[0])
-
-//                }
-            } catch {
-                print("cant find file")
-                // handle error
-            }
+    func getFile() {
+        let jsonURL = "https://annetog.gotenna.com/development/scripts/get_map_pins.php"
+        guard let url = URL(string: jsonURL ) else {
+            return
         }
-        return response!
+        URLSession.shared.dataTask(with: url) { (data,response,error) -> Void in
+            guard let data = data else { return }
+            if let error = error {
+                print(error)
+                return
+            }
+            do {
+                let decoder = JSONDecoder()
+                let pinData = try decoder.decode([Pin].self, from: data)
+                self.pinData = pinData
+            } catch let err {
+                print(err)
+            }
+        }.resume()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
         addData()
     }
-//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        let location = locations.last! as CLLocation
-//        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-//        mapView.setCenter(center, animated: true)
-//    }
-//
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let userLocation: CLLocation = locations.last else {
             return print("Can't find location")

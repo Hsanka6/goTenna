@@ -50,20 +50,99 @@
             </objects>
             <point key="canvasLocation" x="740" y="793"/>
         </scene>
-        <!--View Controller-->
+        <!--Location Table View Controller-->
         <scene sceneID="oU1-H1-gTH">
             <objects>
-                <viewController id="ZLy-Mc-Ewk" sceneMemberID="viewController">
+                <viewController id="ZLy-Mc-Ewk" customClass="LocationTableViewController" customModule="GoTenna" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BQ8-YS-DuF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f43-Bk-PWD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="94" id="JIq-d2-Fm4" customClass="PinTableViewCell" customModule="GoTenna" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="94"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JIq-d2-Fm4" id="Uxa-Zf-F4s">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="93.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qo8-zE-AiG">
+                                                    <rect key="frame" x="10" y="10" width="355" height="73.5"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="254" translatesAutoresizingMaskIntoConstraints="NO" id="qtZ-g0-H57">
+                                                            <rect key="frame" x="0.0" y="0.0" width="338" height="20.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuF-Uf-vwp">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9v5-TI-R0J">
+                                                                    <rect key="frame" x="296" y="0.0" width="42" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="FuF-Uf-vwp" firstAttribute="width" secondItem="9v5-TI-R0J" secondAttribute="width" id="JI7-qZ-EBO"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHy-zS-Bgl">
+                                                            <rect key="frame" x="0.0" y="28.5" width="33" height="45"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Qo8-zE-AiG" secondAttribute="trailing" constant="10" id="TZY-Du-4qh"/>
+                                                <constraint firstItem="Qo8-zE-AiG" firstAttribute="top" secondItem="Uxa-Zf-F4s" secondAttribute="top" constant="10" id="WH9-xI-iX4"/>
+                                                <constraint firstItem="Qo8-zE-AiG" firstAttribute="leading" secondItem="Uxa-Zf-F4s" secondAttribute="leading" constant="10" id="ghT-IH-eTt"/>
+                                                <constraint firstAttribute="bottom" secondItem="Qo8-zE-AiG" secondAttribute="bottom" constant="10" id="yXn-E0-Vcv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="DHy-zS-Bgl" id="Zog-YW-1uG"/>
+                                            <outlet property="distanceLabel" destination="9v5-TI-R0J" id="P6R-nm-AGT"/>
+                                            <outlet property="nameLabel" destination="FuF-Uf-vwp" id="UEi-G9-ffH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZLy-Mc-Ewk" id="fbn-wP-6jq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5dm-If-1Iz" firstAttribute="trailing" secondItem="f43-Bk-PWD" secondAttribute="trailing" id="4mE-2Y-zBT"/>
+                            <constraint firstItem="f43-Bk-PWD" firstAttribute="top" secondItem="5dm-If-1Iz" secondAttribute="top" id="S2b-4d-pTn"/>
+                            <constraint firstItem="5dm-If-1Iz" firstAttribute="bottom" secondItem="f43-Bk-PWD" secondAttribute="bottom" id="TVC-YX-ObQ"/>
+                            <constraint firstItem="f43-Bk-PWD" firstAttribute="leading" secondItem="5dm-If-1Iz" secondAttribute="leading" id="XBT-N4-lVT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5dm-If-1Iz"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="f43-Bk-PWD" id="2qX-Hq-hxn"/>
+                        <outlet property="viewModel" destination="Ooe-Lu-agx" id="09U-WO-mHH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d52-ik-frx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="tEx-Bh-kXj" customClass="PinClient" customModule="GoTenna" customModuleProvider="target"/>
+                <customObject id="Ooe-Lu-agx" customClass="MapViewViewModel" customModule="GoTenna" customModuleProvider="target">
+                    <connections>
+                        <outlet property="pinClient" destination="tEx-Bh-kXj" id="OMc-RB-7fo"/>
+                    </connections>
+                </customObject>
             </objects>
-            <point key="canvasLocation" x="1543" y="807"/>
+            <point key="canvasLocation" x="1541.5999999999999" y="806.44677661169419"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Ke-la-CBz">
