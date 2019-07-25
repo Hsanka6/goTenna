@@ -11,13 +11,11 @@ import Mapbox
 import CoreLocation
 import RealmSwift
 
-class MapViewController: UIViewController, CLLocationManagerDelegate {
+class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDelegate {
     @IBOutlet var mapView: MGLMapView!
     var pinData = [Pin]()
     var locationManager: CLLocationManager!
-    func setUpUI() {
-        //mapView.setCenter(CLLocationCoordinate2D(latitude: 59.31, longitude: 18.06), zoomLevel: 9, animated: false)
-    }
+    @IBOutlet var viewModel: MapViewViewModel!
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         determineMyCurrentLocation()
@@ -32,44 +30,31 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             //locationManager.startUpdatingHeading()
         }
     }
-    func addData() {
-//        let realm = try! Realm()
-//        try! realm.write() {
-//            //let response = try decoder.decode(Response.self, from: getFile(fileName: "goTenna"))
-//            //self.siteArray = response.sites
-//            var person = realm.create(Pin.self, value: ["Jane", 27])
-//            // Reading from or modifying a `RealmOptional` is done via the `value` property
-//        }
-        //let res: Response = getFile(fileName: "goTenna")
-//        for pin in res.pins {
-//            print(pin.name)
-//        }
-        getFile()
+    func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
+        return nil
     }
-    func getFile() {
-        let jsonURL = "https://annetog.gotenna.com/development/scripts/get_map_pins.php"
-        guard let url = URL(string: jsonURL ) else {
-            return
-        }
-        URLSession.shared.dataTask(with: url) { (data,response,error) -> Void in
-            guard let data = data else { return }
-            if let error = error {
-                print(error)
-                return
-            }
-            do {
-                let decoder = JSONDecoder()
-                let pinData = try decoder.decode([Pin].self, from: data)
-                self.pinData = pinData
-            } catch let err {
-                print(err)
-            }
-        }.resume()
+    // Allow callout view to appear when an annotation is tapped.
+    func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
+        return true
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpUI()
-        addData()
+        getData()
+        addMapMarkers()
+    }
+    func getData() {
+        viewModel.fetchPins {
+            DispatchQueue.main.async {
+                self.addMapMarkers()
+            }
+        }
+    }
+    func addMapMarkers() {
+        var points = [MGLPointAnnotation]()
+        points = viewModel.getMapMarkers()
+        for point in points {
+            mapView.addAnnotation(point)
+        }
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let userLocation: CLLocation = locations.last else {

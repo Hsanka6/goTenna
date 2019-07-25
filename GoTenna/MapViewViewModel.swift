@@ -7,7 +7,8 @@
 //
 
 import Foundation
-
+import RealmSwift
+import Mapbox
 class MapViewViewModel: NSObject {
     var pins = [Pin]()
     @IBOutlet weak var pinClient: PinClient!
@@ -17,8 +18,22 @@ class MapViewViewModel: NSObject {
                 return
             }
             self.pins = pins
+            self.storePinsInRealm(pins: pins)
             completion()
         })
+    }
+    func storePinsInRealm(pins: [Pin]) {
+        print("storePins")
+        do {
+            let realm = try Realm()
+            try realm.write {
+                for pin in pins {
+                    realm.create(PinRealm.self, value: [pin.name, pin.id, pin.latitude, pin.longitude, pin.description])
+                }
+            }
+        } catch let error as NSError {
+            print(error.debugDescription)
+        }
     }
     func numberOfItemsInSection(section: Int) -> Int {
         return pins.count
@@ -27,6 +42,17 @@ class MapViewViewModel: NSObject {
 //        return pins[indexPath.row].name
 //    }
 //
+    func getMapMarkers() -> [MGLPointAnnotation] {
+        var annotations = [MGLPointAnnotation]()
+        for pin in pins {
+            let point = MGLPointAnnotation()
+            point.coordinate = CLLocationCoordinate2D(latitude: pin.latitude, longitude: pin.longitude)
+            point.title = pin.name
+            point.subtitle = pin.description
+            annotations.append(point)
+        }
+        return annotations
+    }
     func getPinForIndexPathRow(indexPath: IndexPath) -> Pin {
         return pins[indexPath.row]
     }

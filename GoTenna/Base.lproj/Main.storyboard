@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Map-->
+        <!--Delegate-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="GoTenna" customModuleProvider="target" sceneMemberID="viewController">
@@ -24,6 +24,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/mapbox/streets-v11"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Y6i-Cc-oYR"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -44,9 +47,16 @@
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="zej-8m-qZq" id="TsR-qJ-Evk"/>
+                        <outlet property="viewModel" destination="fNt-2c-WsQ" id="TlQ-OO-Ijk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="sfh-05-y0a" customClass="PinClient" customModule="GoTenna" customModuleProvider="target"/>
+                <customObject id="fNt-2c-WsQ" customClass="MapViewViewModel" customModule="GoTenna" customModuleProvider="target">
+                    <connections>
+                        <outlet property="pinClient" destination="sfh-05-y0a" id="Gn0-Yy-rud"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="740" y="793"/>
         </scene>
@@ -135,18 +145,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d52-ik-frx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="tEx-Bh-kXj" customClass="PinClient" customModule="GoTenna" customModuleProvider="target"/>
-                <customObject id="Ooe-Lu-agx" customClass="MapViewViewModel" customModule="GoTenna" customModuleProvider="target">
-                    <connections>
-                        <outlet property="pinClient" destination="tEx-Bh-kXj" id="OMc-RB-7fo"/>
-                    </connections>
-                </customObject>
+                <customObject id="Ooe-Lu-agx" customClass="MapViewViewModel" customModule="GoTenna" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="1541.5999999999999" y="806.44677661169419"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Ke-la-CBz">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rjn-UT-vTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9he-mU-rzx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GlM-QJ-hSC">
@@ -158,7 +164,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dwX-Vm-sNR"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rjn-UT-vTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-82.400000000000006" y="792.95352323838085"/>
         </scene>

@@ -13,11 +13,12 @@ class LocationTableViewController: UIViewController, UITableViewDataSource {
     @IBOutlet var viewModel: MapViewViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.fetchPins {
+        self.tableView.reloadData()
+//        viewModel.fetchPins {
             DispatchQueue.main.async {
                self.tableView.reloadData()
             }
-        }
+//        }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfItemsInSection(section: section)
@@ -26,6 +27,7 @@ class LocationTableViewController: UIViewController, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? PinTableViewCell else {
             return UITableViewCell()
         }
+        print(viewModel.getPinForIndexPathRow(indexPath: indexPath).name)
         cell.setUp(pin: viewModel.getPinForIndexPathRow(indexPath: indexPath))
         return cell
     }

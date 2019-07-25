@@ -14,6 +14,9 @@ class PinRealm: Object {
     @objc dynamic var latitude = 0.0
     @objc dynamic var longitude = 0.0
     @objc dynamic var descriptionPin = ""
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }
 
 struct Pin: Decodable {
@@ -23,4 +26,3 @@ struct Pin: Decodable {
     let longitude: Double
     let description: String
 }
-
