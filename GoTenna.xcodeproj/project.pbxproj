@@ -137,6 +137,7 @@
 		705837C322E8038800304A8E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7039880822E8E19000B0D0DD /* PinClient.swift */,
 				70B982AD22E8399E00ECF834 /* Pin.swift */,
 			);
 			path = Model;
@@ -167,17 +168,14 @@
 		7081570022E6EDD9006065FC /* GoTenna */ = {
 			isa = PBXGroup;
 			children = (
+				70D548C222EA77250070B51A /* ViewModel */,
+				70D548C122EA771B0070B51A /* View */,
 				705837C322E8038800304A8E /* Model */,
 				7081570122E6EDD9006065FC /* AppDelegate.swift */,
-				7081570322E6EDD9006065FC /* MapViewController.swift */,
 				7081570522E6EDD9006065FC /* Main.storyboard */,
 				7081570822E6EDDA006065FC /* Assets.xcassets */,
 				7081570A22E6EDDA006065FC /* LaunchScreen.storyboard */,
 				7081570D22E6EDDA006065FC /* Info.plist */,
-				7039880422E8D67100B0D0DD /* MapViewViewModel.swift */,
-				7039880622E8D9FE00B0D0DD /* LocationTableViewController.swift */,
-				7039880822E8E19000B0D0DD /* PinClient.swift */,
-				7039880A22E8EC3300B0D0DD /* PinTableViewCell.swift */,
 			);
 			path = GoTenna;
 			sourceTree = "<group>";
@@ -198,6 +196,24 @@
 				7081572322E6EDDA006065FC /* Info.plist */,
 			);
 			path = GoTennaUITests;
+			sourceTree = "<group>";
+		};
+		70D548C122EA771B0070B51A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7039880622E8D9FE00B0D0DD /* LocationTableViewController.swift */,
+				7039880A22E8EC3300B0D0DD /* PinTableViewCell.swift */,
+				7081570322E6EDD9006065FC /* MapViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		70D548C222EA77250070B51A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7039880422E8D67100B0D0DD /* MapViewViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
