@@ -20,9 +20,27 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zej-8m-qZq" customClass="MGLMapView">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="8" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="3Fh-uh-eJM">
+                                        <rect key="frame" x="13" y="553" width="349" height="31"/>
+                                        <connections>
+                                            <action selector="zoomLevel:" destination="BYZ-38-t0r" eventType="valueChanged" id="GV9-se-ICc"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="3Fh-uh-eJM" firstAttribute="leading" secondItem="zej-8m-qZq" secondAttribute="leading" constant="15" id="DeV-v3-M2Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Fh-uh-eJM" secondAttribute="bottom" constant="20" id="gFJ-ca-Cgp"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Fh-uh-eJM" secondAttribute="trailing" constant="15" id="qo6-HI-qUD"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/mapbox/streets-v11"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="zoomLevel">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allowsZooming" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showsUserLocation" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Y6i-Cc-oYR"/>
@@ -47,6 +65,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="zej-8m-qZq" id="TsR-qJ-Evk"/>
+                        <outlet property="slider" destination="3Fh-uh-eJM" id="e2l-H5-yhs"/>
                         <outlet property="viewModel" destination="fNt-2c-WsQ" id="TlQ-OO-Ijk"/>
                     </connections>
                 </viewController>

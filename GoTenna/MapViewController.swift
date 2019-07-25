@@ -21,6 +21,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
         super.viewWillAppear(animated)
         determineMyCurrentLocation()
     }
+    @IBAction func zoomLevel(_ sender: Any) {
+        let currentValue = Int(slider.value)
+        mapView.zoomLevel = Double(exactly: currentValue) ?? 14
+
+    }
+    @IBOutlet var slider: UISlider!
     func determineMyCurrentLocation() {
         locationManager = CLLocationManager()
         locationManager.delegate = self
@@ -28,7 +34,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
         locationManager.requestAlwaysAuthorization()
         if CLLocationManager.locationServicesEnabled() {
             locationManager.startUpdatingLocation()
-            //locationManager.startUpdatingHeading()
         }
     }
     func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
@@ -40,6 +45,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.isZoomEnabled = true
         getData()
         addMapMarkers()
     }
@@ -62,7 +68,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
             return print("Can't find location")
         }
         self.userLocation = CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
-        mapView.setCenter(CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude),zoomLevel: 12, animated: true)
+        mapView.setCenter(CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude),zoomLevel: 14, animated: true)
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Location Error \(error)")
