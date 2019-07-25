@@ -21,7 +21,6 @@
 		7081571722E6EDDA006065FC /* GoTennaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081571622E6EDDA006065FC /* GoTennaTests.swift */; };
 		7081572222E6EDDA006065FC /* GoTennaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081572122E6EDDA006065FC /* GoTennaUITests.swift */; };
 		70B982AE22E8399E00ECF834 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B982AD22E8399E00ECF834 /* Pin.swift */; };
-		70B982B222E8517D00ECF834 /* goTenna.json in Resources */ = {isa = PBXBuildFile; fileRef = 70B982B122E8517D00ECF834 /* goTenna.json */; };
 		74A3BB9E930A242A6EBEB71D /* Pods_GoTenna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D838B0A7F9D1D206AA2D1EC /* Pods_GoTenna.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,7 +75,6 @@
 		7081572122E6EDDA006065FC /* GoTennaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTennaUITests.swift; sourceTree = "<group>"; };
 		7081572322E6EDDA006065FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70B982AD22E8399E00ECF834 /* Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
-		70B982B122E8517D00ECF834 /* goTenna.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = goTenna.json; sourceTree = "<group>"; };
 		947034858FC154E5B9486A8E /* Pods-GoTenna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoTenna.debug.xcconfig"; path = "Target Support Files/Pods-GoTenna/Pods-GoTenna.debug.xcconfig"; sourceTree = "<group>"; };
 		955ED226B8EFEDD499BB25DB /* Pods-GoTennaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoTennaUITests.release.xcconfig"; path = "Target Support Files/Pods-GoTennaUITests/Pods-GoTennaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BC04F60DC065D65EBD5D1493 /* Pods-GoTennaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoTennaUITests.debug.xcconfig"; path = "Target Support Files/Pods-GoTennaUITests/Pods-GoTennaUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 		7081570022E6EDD9006065FC /* GoTenna */ = {
 			isa = PBXGroup;
 			children = (
-				70B982B122E8517D00ECF834 /* goTenna.json */,
 				705837C322E8038800304A8E /* Model */,
 				7081570122E6EDD9006065FC /* AppDelegate.swift */,
 				7081570322E6EDD9006065FC /* MapViewController.swift */,
@@ -313,7 +310,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70B982B222E8517D00ECF834 /* goTenna.json in Resources */,
 				7081570C22E6EDDA006065FC /* LaunchScreen.storyboard in Resources */,
 				7081570922E6EDDA006065FC /* Assets.xcassets in Resources */,
 				7081570722E6EDD9006065FC /* Main.storyboard in Resources */,

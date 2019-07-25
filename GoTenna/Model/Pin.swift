@@ -25,4 +25,18 @@ struct Pin: Decodable {
     let latitude: Double
     let longitude: Double
     let description: String
+    init (name: String, id: Int, lat: Double, lon: Double, description: String) {
+        self.name = name
+        self.id = id
+        self.latitude = lat
+        self.longitude = lon
+        self.description = description
+    }
+    init() {
+        self.name = ""
+        self.id = 0
+        self.latitude = 0.0
+        self.longitude = 0.0
+        self.description = ""
+    }
 }

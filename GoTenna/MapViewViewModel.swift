@@ -9,6 +9,7 @@
 import Foundation
 import RealmSwift
 import Mapbox
+import CoreLocation
 class MapViewViewModel: NSObject {
     var pins = [Pin]()
     @IBOutlet weak var pinClient: PinClient!
@@ -17,18 +18,35 @@ class MapViewViewModel: NSObject {
             guard let pins = pins else {
                 return
             }
+            print("pin size \(pins.count)")
             self.pins = pins
-            self.storePinsInRealm(pins: pins)
+            self.storePinsInRealm()
             completion()
         })
     }
-    func storePinsInRealm(pins: [Pin]) {
-        print("storePins")
+    func getTableObjects(completion: @escaping () -> Void) {
+        do {
+            let realm = try Realm()
+            let objects = realm.objects(PinRealm.self)
+            if objects.count > 0 {
+                completion()
+            } else {
+                print("Objects not stored in Realm")
+            }
+        } catch let error as NSError {
+            print(error.debugDescription)
+        }
+    }
+
+    func storePinsInRealm() {
         do {
             let realm = try Realm()
             try realm.write {
                 for pin in pins {
-                    realm.create(PinRealm.self, value: [pin.name, pin.id, pin.latitude, pin.longitude, pin.description])
+                    let pinThatExists = realm.objects(PinRealm.self).filter("id = %@", pin.id)
+                    if pinThatExists.count == 0 {
+                         realm.create(PinRealm.self, value: [pin.name, pin.id, pin.latitude, pin.longitude, pin.description])
+                    }
                 }
             }
         } catch let error as NSError {
@@ -36,12 +54,15 @@ class MapViewViewModel: NSObject {
         }
     }
     func numberOfItemsInSection(section: Int) -> Int {
-        return pins.count
+        do {
+            let realm = try Realm()
+            let objects = realm.objects(PinRealm.self)
+            return objects.count
+        } catch let error as NSError {
+            print(error.debugDescription)
+        }
+        return 0
     }
-//    func titleFromItemAtIndexPath(indexPath: IndexPath) -> String {
-//        return pins[indexPath.row].name
-//    }
-//
     func getMapMarkers() -> [MGLPointAnnotation] {
         var annotations = [MGLPointAnnotation]()
         for pin in pins {
@@ -53,7 +74,24 @@ class MapViewViewModel: NSObject {
         }
         return annotations
     }
+    func getDistance(userLocation: CLLocationCoordinate2D, locationLat: Double, locationLon: Double) -> Double {
+        var distance = 0.0
+        let userLocation = CLLocation(latitude: userLocation.latitude, longitude: userLocation.longitude)
+        let placeLocation = CLLocation(latitude: locationLat, longitude: locationLon)
+        let distanceInMeters = userLocation.distance(from: placeLocation)
+        distance = distanceInMeters/1609.0
+        return distance
+    }
     func getPinForIndexPathRow(indexPath: IndexPath) -> Pin {
-        return pins[indexPath.row]
+        do {
+            let realm = try Realm()
+            guard let specificPerson = realm.object(ofType: PinRealm.self, forPrimaryKey: indexPath.row + 1) else {
+                return Pin()
+            }
+            return Pin(name: specificPerson.name, id: specificPerson.id, lat: specificPerson.latitude, lon: specificPerson.longitude, description: specificPerson.descriptionPin)
+        } catch let error as NSError {
+            print(error.debugDescription)
+        }
+        return Pin()
     }
 }

@@ -15,6 +15,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
     @IBOutlet var mapView: MGLMapView!
     var pinData = [Pin]()
     var locationManager: CLLocationManager!
+    var userLocation: CLLocationCoordinate2D!
     @IBOutlet var viewModel: MapViewViewModel!
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -60,11 +61,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
         guard let userLocation: CLLocation = locations.last else {
             return print("Can't find location")
         }
+        self.userLocation = CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
         mapView.setCenter(CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude),zoomLevel: 12, animated: true)
-        print("user latitude = \(userLocation.coordinate.latitude)")
-        print("user longitude = \(userLocation.coordinate.longitude)")
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Location Error \(error)")
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "menu" {
+            if let controller = segue.destination as? LocationTableViewController {
+                controller.userLocation = self.userLocation
+            }
+        }
     }
 }
