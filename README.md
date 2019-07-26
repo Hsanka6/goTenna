@@ -4,7 +4,7 @@
 
 ## Usage
 
-This app displays pins on a Mapbox map and menu and in the menu it shows how many miles the location is away from the user's current location in miles. If you click on a pin it center the map around the clicked the pin.
+This app displays pins on a Mapbox map and menu and in the menu it shows how many miles the location is away from the user's current location in miles. If you click on a pin, it centers the map around the clicked pin.
 
 This application uses the MVVM architecture.
 
