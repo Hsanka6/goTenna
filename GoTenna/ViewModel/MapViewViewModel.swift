@@ -18,7 +18,6 @@ class MapViewViewModel: NSObject {
             guard let pins = pins else {
                 return
             }
-            print("pin size \(pins.count)")
             self.pins = pins
             self.storePinsInRealm()
             completion()
@@ -37,7 +36,12 @@ class MapViewViewModel: NSObject {
             print(error.debugDescription)
         }
     }
-
+    func getPinDescription(annotation: MGLAnnotation) -> String {
+        guard let pin = pins.first(where: {$0.name == annotation.title}) else {
+            return ""
+        }
+        return pin.description
+    }
     func storePinsInRealm() {
         do {
             let realm = try Realm()
@@ -69,7 +73,6 @@ class MapViewViewModel: NSObject {
             let point = MGLPointAnnotation()
             point.coordinate = CLLocationCoordinate2D(latitude: pin.latitude, longitude: pin.longitude)
             point.title = pin.name
-            point.subtitle = pin.description
             annotations.append(point)
         }
         return annotations
