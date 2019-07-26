@@ -31,8 +31,12 @@ class LocationTableViewController: UIViewController, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? PinTableViewCell else {
             return UITableViewCell()
         }
+        guard let location = userLocation else {
+            return UITableViewCell()
+        }
+        let loc = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
         let pin = viewModel.getPinForIndexPathRow(indexPath: indexPath)
-        cell.setUp(pin: pin, location: viewModel.getDistance(userLocation: userLocation ?? CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0), locationLat: pin.latitude, locationLon: pin.longitude))
+        cell.setUp(pin: pin, location: loc.getDistanceInMiles(userLocation: location, locationLat: pin.latitude, locationLon: pin.longitude))
         return cell
     }
 }

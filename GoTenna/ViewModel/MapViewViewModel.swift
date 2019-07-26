@@ -77,14 +77,6 @@ class MapViewViewModel: NSObject {
         }
         return annotations
     }
-    func getDistance(userLocation: CLLocationCoordinate2D, locationLat: Double, locationLon: Double) -> Double {
-        var distance = 0.0
-        let userLocation = CLLocation(latitude: userLocation.latitude, longitude: userLocation.longitude)
-        let placeLocation = CLLocation(latitude: locationLat, longitude: locationLon)
-        let distanceInMeters = userLocation.distance(from: placeLocation)
-        distance = distanceInMeters/1609.0
-        return distance
-    }
     func getPinForIndexPathRow(indexPath: IndexPath) -> Pin {
         do {
             let realm = try Realm()
